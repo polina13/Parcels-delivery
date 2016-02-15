@@ -18,6 +18,6 @@ public class Parcels {
   }
 
   public int getCost() {
-    return (mDistance / 50) + (mWeight * 1);
+    return ((mDistance / 50) + (mWeight * 1) + getVolume())/2;
   }
 }

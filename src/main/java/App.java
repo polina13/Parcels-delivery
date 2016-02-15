@@ -24,7 +24,7 @@ public class App {
       int weight = Integer.parseInt(request.queryParams("weight"));
       int distance = Integer.parseInt(request.queryParams("distance"));
 
-    }
+
 
       Parcels myParcels = new Parcels(height, width, length, weight, distance);
       model.put("myParcels", myParcels);
@@ -32,5 +32,5 @@ public class App {
       model.put("template", "templates/parcel.vtl");
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
-   }
+  }
 }
