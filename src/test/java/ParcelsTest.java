@@ -18,7 +18,7 @@ public class ParcelsTest {
 
   @Test
   public void getCost_willCalculateCost() {
-    Parcels testParcel = new Parcels(2,3,4,5,100);
+    Parcels testParcel = new Parcels(1,1,1,10,150);
     assertEquals(7,testParcel.getCost());
   }
 }

@@ -20,26 +20,19 @@ public class AppTest extends FluentTest {
   @Test
   public void rootTest() {
       goTo("http://localhost:4567/");
-      assertThat(pageSource()).contains("Triangle Types");
+      assertThat(pageSource()).contains("Parcel Deliveries");
   }
 
   @Test
-  public void checkEquilateral() {
+  public void checkCost() {
       goTo("http://localhost:4567/");
-      fill("#sideA").with("2");
-      fill("#sideB").with("2");
-      fill("#sideC").with("2");
+      fill("#height").with("1");
+      fill("#width").with("1");
+      fill("#length").with("1");
+      fill("#weight").with("10");
+      fill("#distance").with("150");
       submit(".btn");
-      assertThat(pageSource()).contains("equilateral");
+      assertThat(pageSource()).contains("Your parcel is: $7");
   }
 
-  @Test
-  public void checkNotATriangle() {
-      goTo("http://localhost:4567/");
-      fill("#sideA").with("2");
-      fill("#sideB").with("2");
-      fill("#sideC").with("8");
-      submit(".btn");
-      assertThat(pageSource()).contains("That's not a triangle!");
-  }
 }
