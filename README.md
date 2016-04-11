@@ -2,7 +2,7 @@
 
 #### Input parcel specifications and we'll give you a price for it, February 15, 2016.
 
-#### By Blair Peterson Polina Nenchev
+#### By Blair Peterson  and Polina Nenchev
 
 ## Description
 
